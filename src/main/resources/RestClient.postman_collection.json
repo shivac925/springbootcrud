@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "e6511ecb-3c46-47ab-bf1a-1e9463d834f8",
+		"name": "RestClient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/api/user/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/user/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/services/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"services",
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/user/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/user/test@gmail.com",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/user/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Naresh Kumar\",\n    \"age\": 49,\n    \"salary\": 45000\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/user/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 1,\n\t\"name\" : \"Shiva Kumar Chenna\",\n\t\"age\" : 25,\n\t\"salary\" : 45000\n}"
+				},
+				"url": {
+					"raw": "http://localhost/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/api/saveusers/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"name\" : \"Shiva Kumar Chenna\",\n\t\t\"age\" : 26,\n\t\t\"salary\" : 45000\n\t}, {\n\t\t\"name\" : \"Shrvan\",\n\t\t\"age\" : 24,\n\t\t\"salary\" : 45000\n\t}, {\n\t\t\"name\" : \"Raghu\",\n\t\t\"age\" : 35,\n\t\t\"salary\" : 45000\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/services/api/saveusers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"services",
+						"api",
+						"saveusers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/services/api/evict",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/services/api/evict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"services",
+						"api",
+						"evict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
